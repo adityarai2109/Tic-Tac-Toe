@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Game from "./components/Game";
 
 function App() {
+  const [player, setPlayer] = useState(true);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="heading">Tic Tac Toe</h1>
+      <div className="content">
+        <Game player={player} setPlayer={setPlayer} />
+        <h3>{player ? "Player 1" : "Player 2"} its your chance</h3>
+      </div>
     </div>
   );
 }
