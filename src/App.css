@@ -1,14 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 body {
-  background-color: #eff1f3;
+  background-color: #3c0919;
+  color: #e2294f;
+  font-size: 1.5rem;
+  font-family: DotGothic16;
+  letter-spacing: 0.2rem;
+  text-align: center;
 }
 .heading {
-  font-family: "Times New Roman", Times, serif;
-  color: #272727;
+  color: #ff2c55;
   text-align: center;
+  text-decoration: underline;
 }
 .content {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form button {
+  margin-top: 1rem;
+}
+.details {
+  padding: 1.5rem;
+}
+.names {
+  display: flex;
+  flex-direction: row;
+}
+.input {
+  padding: 0.8rem 0rem 0.8rem 0rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #3c0919;
+}
+.submit {
+  margin-top: 1rem;
+  width: 120px;
+  height: 60px;
+  background-color: #ff2c55;
+  color: #3c0919;
+  font-size: 1rem;
+  font-family: DotGothic16;
+  border: none;
+}
+button:hover {
+  background-color: #fd4b6e;
+}
+
+@media only screen and (max-width: 780px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .input {
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .names {
+    display: flex;
+    flex-direction: column;
+  }
+  .heading {
+    color: #ff2c55;
+    text-align: center;
+    text-decoration: none;
+  }
 }
