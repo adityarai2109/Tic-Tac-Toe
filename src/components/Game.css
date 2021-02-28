@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 .game {
-  /* background-color: black; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;

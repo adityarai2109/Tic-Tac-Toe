@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
 import Game from "./components/Game";
-import CloseIcon from "@material-ui/icons/Close";
-import RadioButtonUncheckedIcon from "@material-ui/icons/RadioButtonUnchecked";
+import CircleDark from "./MovesImages/CircleDark.svg";
+import CrossDark from "./MovesImages/CrossDark.svg";
+import CircleLight from "./MovesImages/CircleLight.svg";
+import CrossLight from "./MovesImages/CrossLight.svg";
 
 function App() {
   const [player, setPlayer] = useState(Math.random() >= 0.5);
@@ -11,8 +13,8 @@ function App() {
 
   const [proceed, setProceed] = useState(true);
 
-  let X = <CloseIcon fontSize="large" />;
-  let O = <RadioButtonUncheckedIcon fontSize="large" />;
+  let O = <img src={CircleDark} alt="O" />;
+  let X = <img src={CrossDark} alt="X" />;
 
   const NamesHandler = (e, i) => {
     let newNames = [...names];
@@ -90,10 +92,20 @@ function App() {
             names={names}
             setNames={setNames}
             Result={Result}
+            CircleDark={CircleDark}
+            CrossDark={CrossDark}
           />
 
           <h3>
-            {player ? `${names[0]} (${X}) ` : `${names[1]} (${O}) `}
+            {player ? (
+              <>
+                {names[0]} <img src={CircleLight} alt="O" />
+              </>
+            ) : (
+              <>
+                {names[1]} <img src={CrossLight} alt="X" />
+              </>
+            )}
             its your chance
           </h3>
         </div>
