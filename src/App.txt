@@ -1,3 +1,5 @@
+// Initial file for the game
+
 import React, { useState } from "react";
 import "./App.css";
 import Game from "./components/Game";
@@ -9,15 +11,27 @@ import CrossLight from "./MovesImages/CrossLight.svg";
 function App() {
   const [player, setPlayer] = useState(Math.random() >= 0.5);
   const [names, setNames] = useState(["Player 1 ", "Player 2 "]);
+  const [draw, setDraw] = useState(false);
+
   const [proceed, setProceed] = useState(true);
-  const [done, setDone] = useState(false);
-  const [winner, setWinner] = useState("We all ");
-  const [count, setCount] = useState(0);
+
+  let O = <img src={CircleDark} alt="O" />;
+  let X = <img src={CrossDark} alt="X" />;
 
   const NamesHandler = (e, i) => {
     let newNames = [...names];
     newNames[i] = e;
     setNames(newNames);
+  };
+
+  const Result = () => {
+    console.log("result");
+    if (draw) {
+      console.log("draw");
+    } else {
+      console.log("player won");
+    }
+    return <div></div>;
   };
 
   return (
@@ -79,31 +93,23 @@ function App() {
             setProceed={setProceed}
             names={names}
             setNames={setNames}
+            Result={Result}
             CircleDark={CircleDark}
             CrossDark={CrossDark}
-            done={done}
-            setDone={setDone}
-            winner={winner}
-            setWinner={setWinner}
-            count={count}
-            setCount={setCount}
           />
-          {!(done || count === 9) ? (
-            <h3>
-              {player ? (
-                <>
-                  {names[0]} ( <img src={CrossLight} alt="X" width="25px" /> )
-                </>
-              ) : (
-                <>
-                  {names[1]} ( <img src={CircleLight} alt="O" width="25px" /> )
-                </>
-              )}
-              its your chance
-            </h3>
-          ) : (
-            <h3>{winner} won</h3>
-          )}
+
+          <h3>
+            {player ? (
+              <>
+                {names[0]} <img src={CircleLight} alt="O" />
+              </>
+            ) : (
+              <>
+                {names[1]} <img src={CrossLight} alt="X" />
+              </>
+            )}
+            its your chance
+          </h3>
         </div>
       )}
     </div>
