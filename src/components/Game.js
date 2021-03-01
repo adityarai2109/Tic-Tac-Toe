@@ -59,7 +59,6 @@ export default function Game(props) {
         newMatrix[i][j] = 0;
         setMatrix(newMatrix);
       }
-      //console.table(matrix);
 
       let ans = checkWinner();
       if (ans !== -1) {
