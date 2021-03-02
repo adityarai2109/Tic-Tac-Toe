@@ -65,9 +65,9 @@ export default function Game(props) {
         props.setDone(!props.done);
       }
       if (ans === 1) {
-        props.setWinner(props.names[1]);
-      } else if (ans === 0) {
         props.setWinner(props.names[0]);
+      } else if (ans === 0) {
+        props.setWinner(props.names[1]);
       }
     }
     console.table(matrix);
