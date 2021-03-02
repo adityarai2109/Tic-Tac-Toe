@@ -76,7 +76,11 @@ export default function Game(props) {
   const Cell = (i) => {
     return (
       <div className="button">
-        <button className="buttons" onClick={() => Change(i)}>
+        <button
+          className="buttons"
+          disabled={props.done}
+          onClick={() => Change(i)}
+        >
           {arr[i]}
         </button>
       </div>
