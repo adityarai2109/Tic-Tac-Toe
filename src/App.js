@@ -11,7 +11,7 @@ function App() {
   const [names, setNames] = useState(["Player 1 ", "Player 2 "]);
   const [proceed, setProceed] = useState(true);
   const [done, setDone] = useState(false);
-  const [winner, setWinner] = useState("We all ");
+  const [winner, setWinner] = useState("Draw");
   const [count, setCount] = useState(0);
 
   const NamesHandler = (e, i) => {
@@ -99,8 +99,10 @@ function App() {
                   {names[1]} ( <img src={CircleLight} alt="O" width="25px" /> )
                 </>
               )}
-              its your chance
+              it's your chance
             </h3>
+          ) : winner === "Draw" ? (
+            <h3>{winner}</h3>
           ) : (
             <h3>{winner} won</h3>
           )}

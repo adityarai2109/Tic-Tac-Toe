@@ -70,6 +70,7 @@ export default function Game(props) {
         props.setWinner(props.names[0]);
       }
     }
+    console.table(matrix);
   }
 
   const Cell = (i) => {
