@@ -56,3 +56,42 @@ export default function Game(props) {
     </>
   );
 }
+
+
+
+Game.css
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  width: 420px;
+  height: 420px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+}
+.buttons {
+  width: 120px;
+  height: 120px;
+  background-color: #ff2c55;
+  color: #3c0919;
+  border: none;
+}
+
+.refresh {
+  margin-top: 1rem;
+  width: 120px;
+  height: 60px;
+  background-color: #ff2c55;
+  color: #3c0919;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: DotGothic16;
+  border: none;
+}
+.button {
+  padding: 10px;
+}

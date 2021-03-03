@@ -88,11 +88,7 @@ export default function Game(props) {
   };
   return (
     <>
-      {
-        /*!props.done &&*/ <div className="game">
-          {array.map((i) => Cell(i))}
-        </div>
-      }
+      {<div className="game">{array.map((i) => Cell(i))}</div>}
       {(props.done || props.count === 9) && (
         <button
           className="refresh"
