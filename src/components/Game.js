@@ -38,11 +38,13 @@ export default function Game(props) {
       props.setPlayer(!props.player);
       if (props.player) {
         let newArr = [...arr];
-        newArr[index] = <img src={props.CrossDark} alt="X" />;
+        newArr[index] = <img className="cross" src={props.CrossDark} alt="X" />;
         setArr(newArr);
       } else {
         let newArr = [...arr];
-        newArr[index] = <img src={props.CircleDark} alt="O" />;
+        newArr[index] = (
+          <img className="circle" src={props.CircleDark} alt="O" />
+        );
         setArr(newArr);
       }
       props.setCount(props.count + 1);

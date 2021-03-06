@@ -33,3 +33,31 @@
 .button {
   padding: 10px;
 }
+
+@media only screen and (max-width: 780px) {
+  .game {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    width: 300px;
+    height: 300px;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+  .buttons {
+    width: 80px;
+    height: 80px;
+    background-color: #ff2c55;
+    color: #3c0919;
+    border: none;
+  }
+  .cross {
+    width: 50%;
+  }
+  .circle {
+    width: 60%;
+  }
+}
