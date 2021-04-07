@@ -48,7 +48,7 @@ export default function Game(props) {
         setArr(newArr);
       }
       props.setCount(props.count + 1);
-      console.log(arr);
+      // console.log(arr);
       // matrix filling
       let i = parseInt(index / 3);
       let j = parseInt(index % 3);
@@ -72,7 +72,7 @@ export default function Game(props) {
         props.setWinner(props.names[1]);
       }
     }
-    console.table(matrix);
+    // console.table(matrix);
   }
 
   const Cell = (i) => {
@@ -82,7 +82,6 @@ export default function Game(props) {
           className="buttons"
           disabled={props.done}
           onClick={() => Change(i)}
-          
         >
           {arr[i]}
         </button>
