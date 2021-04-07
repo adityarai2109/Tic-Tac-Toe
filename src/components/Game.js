@@ -82,7 +82,6 @@ export default function Game(props) {
           className="buttons"
           disabled={props.done}
           onClick={() => Change(i)}
-          
         >
           {arr[i]}
         </button>
