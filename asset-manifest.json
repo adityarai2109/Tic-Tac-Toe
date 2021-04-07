@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9d79386.chunk.css",
-    "main.js": "/static/js/main.f5907eec.chunk.js",
-    "main.js.map": "/static/js/main.f5907eec.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.3622af13.js",
-    "runtime-main.js.map": "/static/js/runtime-main.3622af13.js.map",
-    "static/js/2.9fc12d56.chunk.js": "/static/js/2.9fc12d56.chunk.js",
-    "static/js/2.9fc12d56.chunk.js.map": "/static/js/2.9fc12d56.chunk.js.map",
-    "static/js/3.dd5f07a8.chunk.js": "/static/js/3.dd5f07a8.chunk.js",
-    "static/js/3.dd5f07a8.chunk.js.map": "/static/js/3.dd5f07a8.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.d9d79386.chunk.css.map": "/static/css/main.d9d79386.chunk.css.map",
-    "static/js/2.9fc12d56.chunk.js.LICENSE.txt": "/static/js/2.9fc12d56.chunk.js.LICENSE.txt",
-    "static/js/main.f5907eec.chunk.js.LICENSE.txt": "/static/js/main.f5907eec.chunk.js.LICENSE.txt",
-    "static/media/CircleDark.02d1c743.svg": "/static/media/CircleDark.02d1c743.svg",
-    "static/media/CircleLight.a9f7376b.svg": "/static/media/CircleLight.a9f7376b.svg",
-    "static/media/CrossDark.7ca9f2af.svg": "/static/media/CrossDark.7ca9f2af.svg",
-    "static/media/CrossLight.c91a637a.svg": "/static/media/CrossLight.c91a637a.svg"
+    "main.css": "/Tic-Tac-Toe/static/css/main.dfb9db84.chunk.css",
+    "main.js": "/Tic-Tac-Toe/static/js/main.24b72a44.chunk.js",
+    "main.js.map": "/Tic-Tac-Toe/static/js/main.24b72a44.chunk.js.map",
+    "runtime-main.js": "/Tic-Tac-Toe/static/js/runtime-main.9fa25260.js",
+    "runtime-main.js.map": "/Tic-Tac-Toe/static/js/runtime-main.9fa25260.js.map",
+    "static/js/2.9fc12d56.chunk.js": "/Tic-Tac-Toe/static/js/2.9fc12d56.chunk.js",
+    "static/js/2.9fc12d56.chunk.js.map": "/Tic-Tac-Toe/static/js/2.9fc12d56.chunk.js.map",
+    "static/js/3.dd5f07a8.chunk.js": "/Tic-Tac-Toe/static/js/3.dd5f07a8.chunk.js",
+    "static/js/3.dd5f07a8.chunk.js.map": "/Tic-Tac-Toe/static/js/3.dd5f07a8.chunk.js.map",
+    "index.html": "/Tic-Tac-Toe/index.html",
+    "static/css/main.dfb9db84.chunk.css.map": "/Tic-Tac-Toe/static/css/main.dfb9db84.chunk.css.map",
+    "static/js/2.9fc12d56.chunk.js.LICENSE.txt": "/Tic-Tac-Toe/static/js/2.9fc12d56.chunk.js.LICENSE.txt",
+    "static/media/CircleDark.02d1c743.svg": "/Tic-Tac-Toe/static/media/CircleDark.02d1c743.svg",
+    "static/media/CircleLight.a9f7376b.svg": "/Tic-Tac-Toe/static/media/CircleLight.a9f7376b.svg",
+    "static/media/CrossDark.7ca9f2af.svg": "/Tic-Tac-Toe/static/media/CrossDark.7ca9f2af.svg",
+    "static/media/CrossLight.c91a637a.svg": "/Tic-Tac-Toe/static/media/CrossLight.c91a637a.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3622af13.js",
+    "static/js/runtime-main.9fa25260.js",
     "static/js/2.9fc12d56.chunk.js",
-    "static/css/main.d9d79386.chunk.css",
-    "static/js/main.f5907eec.chunk.js"
+    "static/css/main.dfb9db84.chunk.css",
+    "static/js/main.24b72a44.chunk.js"
   ]
 }
