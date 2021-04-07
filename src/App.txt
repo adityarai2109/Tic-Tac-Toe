@@ -129,7 +129,7 @@ export default App;
 
 
 
-App.css
+App.css2
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 body {
   background-color: #3c0919;
